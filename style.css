@@ -1,0 +1,334 @@
+/* HTML */
+html {
+    height: 100%;
+}
+a{
+    font-family: 'Kelly Slab', cursive;
+    text-decoration: none;
+}
+/* header */
+#banner{
+    display:block;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    border-bottom: 5px solid orange;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+    color: red;
+}
+h5{
+    text-align: center;
+    font-size: 15px;
+    color:orange;
+}
+li{
+    display: list-item;
+    text-decoration: none;
+    list-style-type: none;
+} 
+header ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+header ul li a{
+    justify-content: space-between;
+    color: orange;
+    text-decoration: none;
+}
+header a:hover{
+    color: white;
+    background-color: orange;
+}
+
+/* Body */
+body{
+    position:relative;
+    background-image:url(images/flames1.jpg);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    color:black;
+    z-index: 100;
+}
+.video{
+    display: block;
+    object-fit: contain;
+    top: 0;
+    opacity: 0.20;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+
+}
+
+/*MAIN*/
+main{
+    margin-bottom: -50px;
+    z-index: 100;
+}
+
+section{
+    background-color: black;
+    opacity: 80%;
+}
+
+
+/* Première section*/
+#section-1{
+    display: flex;
+    border: 5px solid orange;
+    border-radius: 30px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+.gauche{
+    position: relative;
+    height: auto;
+    background-color: white;
+    border-radius: 25px 0px 0px 25px;
+    background-color: white;
+    padding: 0;
+
+}
+.droite{
+    padding: 0;
+}
+.texte-g{
+    position: relative;
+    font-size: 15px;
+    top: 50px;
+    text-align: center;
+    color:black;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.image-d{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 25px 25px 0;
+}
+/* Seconde section */
+#section-2{
+    border: 5px solid orange;
+    border-radius: 30px;
+    height: 600px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+.carousel-inner{
+    display:block;
+    border-radius: 25px;
+    width:100%;
+    height:600 px;
+}
+.carou{
+    height: 590px;
+    width: 100%;
+}
+.carousel-inner img{
+    max-width: 100%;
+    max-height: 600px;
+}
+
+/* Troisième section */
+#section-3{
+    display: flex;
+    height: 600px;
+    border: 5px solid orange;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+/*texte contact*/
+.contact{
+    background-color: white;
+    border-radius: 25px 0px 0px 25px;
+    background-color: white;
+    padding-top: 10px;
+    font-size: 15px;
+
+}
+.contact p{
+    position: relative;
+    font-size: 15px;
+    top: 100px;
+    text-align: center;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+/*Google map*/
+iframe{
+    position: relative;
+    height: 590px;
+    border-radius: 0 25px 25px 0;
+    width: 100%;
+}
+
+.googlemap{
+    display: flex;
+    padding: 0;
+    position: relative;
+    font-size: 15px;
+
+}
+
+/* footer */
+
+footer{
+    background-color: #424140;
+
+    color: rgb(255, 255, 255);
+    margin-top: -100px;
+    margin-bottom: auto;
+    text-align: center;
+    margin-top: 90px;
+    border-top: 5px solid orange;
+    width: 100%;
+}
+.contenu-footer{
+    display: flex ;
+    width: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.footer-contact,
+.footer-horaires,
+.footer-reseaux{
+    height: 250px;
+    margin-top: 20px;
+}
+.footer-contact h3,
+.footer-horaires h3,
+.footer-reseaux h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: red;
+}
+ul{
+    padding: 0;
+}
+.footer-contact p{
+    padding: 2px 0;
+}
+.liste-horaires,
+.liste-reseaux{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.list-media a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.liste-media li{
+    padding-top: 15px;
+}
+
+footer li,a,p{
+    color: orange;
+    bottom: 10px
+}
+a{
+    z-index: 999;
+}
+.ancre{
+    color: red;
+}
+footer .ancre{
+    font-size: 20px;
+}
+
+@media (max-width:320px) {
+    #section-1{
+        margin-top: 20px;
+    }
+    .gauche{
+        border-radius: 25px 25px 0 0;
+        padding-bottom: 20px;
+    }
+    .image-d{
+        border-radius: 0 0 25px 25px;
+    }
+    .gauche .droite{
+        height: 500px;
+    }
+    #section-2{
+        width: 100%;
+    }
+    .gauche p{
+        margin: 0;
+        top: 10px;
+    }
+    .contact{
+        height: 300px;
+        border-radius: 25px 25px 0 0;
+    }
+    .contact p{
+        margin: 0;
+        top: 5px;
+    }
+    iframe{
+        border-radius: 0 0px 25px 25px;
+    }
+    .ancre{
+        padding-top: 90px;
+    }
+}
+@media (max-width:760px) {
+    .gauche{
+        border-radius: 25px 25px 0 0;
+        overflow: scroll;
+    }
+    .image-d{
+        border-radius: 0 0 25px 25px;
+        height: 300px;
+    }
+    .gauche .droite{
+        height: 500px;
+    }
+    .gauche p{
+        margin: 0;
+        top: 10px;
+    }
+    .contact{
+        border-radius: 25px 25px 0 0;
+        height: 100px;
+    }
+    .contact p{
+        margin: 0;
+        top: 5px;
+    }
+    iframe{
+        border-radius: 0 0px 25px 25px;
+    }
+    .ancre{
+        padding-top: 90px;
+    }
+}
